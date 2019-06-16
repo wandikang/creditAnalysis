@@ -1,0 +1,52 @@
+
+====START===
+Feature ranking:
+  1. feature 95 annual_inc 0.051129863915571575
+  2. feature 13 collections_12_mths_ex_med 0.01679268971734774
+  3. feature 14 debt_to_income 0.015196896574570826
+  4. feature 0 delinq_2yrs 0.014328386275972936
+  5. feature 844 emp_length 0.014037510407805862
+  6. feature 5 Id 0.013919671117469558
+  7. feature 841 inq_last_6mths 0.013852301283028265
+  8. feature 10 mths_since_last_delinq 0.013813424490965778
+  9. feature 2 mths_since_last_major_derog 0.013766649671015114
+  10. feature 4 mths_since_last_record 0.013575327382331073
+apply feature selection
+number cv k-fold = 5
+
+Cross validation LogisticRegression
+  Average test_neg_log_loss: -0.34713516002800515
+  Average test_f1: 0.23823639822014275
+  Average train_neg_log_loss: -0.3150424011411532
+  Average train_f1: 0.2747989084140715
+Cross validation GradientBoosting
+  Average test_neg_log_loss: -0.3658192527529359
+  Average test_f1: 0.27435426341734337
+  Average train_neg_log_loss: -0.12245714575704673
+  Average train_f1: 0.845498892995358
+Evaluation  LogisticRegression performance on test set:
+  log loss score (requested metrics):  2.277216402514509
+  f1 score (requested metrics):  0.2899159663865546
+  precision:  0.8313253012048193
+  recall:  0.17557251908396945
+
+Evaluation  LogisticRegression performance on train set (for comparison):
+  log loss score (requested metrics):  2.267615083656971
+  f1 score (requested metrics):  0.2597156398104265
+  precision:  0.8954248366013072
+  recall:  0.15188470066518847
+
+Evaluation  GradientBoosting performance on test set:
+  log loss score (requested metrics):  2.519185282667117
+  f1 score (requested metrics):  0.32061068702290074
+  precision:  0.6412213740458015
+  recall:  0.21374045801526717
+
+Evaluation  GradientBoosting performance on train set (for comparison):
+  log loss score (requested metrics):  2.811203059161133
+  f1 score (requested metrics):  0.7598908594815825
+  precision:  0.9875886524822695
+  recall:  0.6175166297117517
+
+=== end ===
+

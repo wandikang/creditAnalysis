@@ -1,0 +1,7 @@
+out/*
+data/DR_Demo_Lending_Club
+data/DR_Demo_Lending_Club_dum.csv
+data/.~lock*
+source/__pycache__/
+.idea/
+source/.vscode/*

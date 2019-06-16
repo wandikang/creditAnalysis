@@ -1,0 +1,52 @@
+
+====START===
+Feature ranking:
+  1. feature 95 annual_inc 0.048205255428353855
+  2. feature 13 collections_12_mths_ex_med 0.01648388958662992
+  3. feature 5 debt_to_income 0.014769179062948022
+  4. feature 14 delinq_2yrs 0.014669038807282648
+  5. feature 840 emp_length 0.014419708517177752
+  6. feature 0 Id 0.014375558628751346
+  7. feature 12 inq_last_6mths 0.014284952144662766
+  8. feature 10 mths_since_last_delinq 0.01420789674848202
+  9. feature 2 mths_since_last_major_derog 0.014198865202456492
+  10. feature 4 mths_since_last_record 0.013798608388917508
+apply feature selection
+number cv k-fold = 5
+
+Cross validation LogisticRegression
+  Average test_neg_log_loss: -0.5465057910324096
+  Average test_f1: 0.6894003996617867
+  Average train_neg_log_loss: -0.5319486759247727
+  Average train_f1: 0.6983677542433775
+Cross validation GradientBoosting
+  Average test_neg_log_loss: -0.6138681775376844
+  Average test_f1: 0.8706113221587062
+  Average train_neg_log_loss: -0.09934164841623189
+  Average train_f1: 0.9689740187849608
+Evaluation  LogisticRegression performance on test set:
+  log loss score (requested metrics):  1.7817755381219031
+  f1 score (requested metrics):  0.32795242141036535
+  precision:  0.2461734693877551
+  recall:  0.4910941475826972
+
+Evaluation  LogisticRegression performance on train set (for comparison):
+  log loss score (requested metrics):  3.2660821726752074
+  f1 score (requested metrics):  0.6962625021933673
+  precision:  0.7486792452830189
+  recall:  0.6507051492292555
+
+Evaluation  GradientBoosting performance on test set:
+  log loss score (requested metrics):  2.285721615454218
+  f1 score (requested metrics):  0.297029702970297
+  precision:  0.6696428571428571
+  recall:  0.19083969465648856
+
+Evaluation  GradientBoosting performance on train set (for comparison):
+  log loss score (requested metrics):  3.5832714149712723
+  f1 score (requested metrics):  0.9606674612634089
+  precision:  0.9989376770538244
+  recall:  0.9252213840603477
+
+=== end ===
+
