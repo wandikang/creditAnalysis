@@ -8,5 +8,5 @@ xgboost==0.82
 matplotlib==3.0.3
 numpy==1.16.2
 tensorboard==1.13.1
-tensorflow-gpu==1.13.1
+tensorflow-gpu==1.15.2
 keras==2.2.4
